@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import SearchBox from './SearchBox';
+import Maps from './Maps';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ return(
+  <div style={{border: "2px solid blue", display: "flex", flexDirection: "row", height: "100vh", width: "100vw"}}>
+  <div style={{border: "2px solid blue", width:"50vw", height: "100%"}}>
+    <Maps />
+  </div>
+  <div style={{border: "2px solid blue", width:"50vw"}}>
+    <SearchBox />
+  </div>
+  </div>
+ )
 }
 
 export default App;
